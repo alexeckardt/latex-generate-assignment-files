@@ -1,0 +1,14 @@
+{
+    "configured": false,
+
+    "author_name" : "AUTHOR NAME",
+    "author_extra_identifier": "\\\\ \\texttt{xxx@xxx.com}",
+    
+    "save_to_clipboard_instead_of_directory" : false,
+    "generation_directory" : "./reports",
+    "open_saved_directory_in_vscode": true,
+    "auto_open_if_directory_exists": true,
+    
+    "buffer_length": 90,
+    "parts_assignment_uses_roman_numerals": true
+}

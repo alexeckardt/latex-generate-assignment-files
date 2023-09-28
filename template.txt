@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{parskip}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage[section]{placeins}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+{BIGBUFFER}
+
+% Document Setup
+
+% Turn of Section Numbers
+\setcounter{secnumdepth}{0}
+
+% Format Linking on TOC and LOF
+\hypersetup{
+    colorlinks=true, %replace the ugly red boxes
+    linktoc=all, %add links to TOC sections, subsections also linkable
+    linkcolor=black, %replace red
+    % bookmarks=true, %pdf export has a toc too
+}
+
+
+{BIGBUFFER}
+
+%Title
+\title{COMPSCI {COURSECODE} {ASSIGNMENTTYPE} {ASSIGNMENTNUM}}
+\author{{AUTHORS}}
+\date{{DUEDATE}}
+
+{BIGBUFFER}
+
+%Image
+\newcommand{\figureInsetScaled}[3]
+{
+    \FloatBarrier{}
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=#3\textwidth]{#1}
+        \caption{#2}
+    \end{figure}
+    \FloatBarrier{}
+}
+
+{BUFFER}
+
+%Image, Default Scaling
+\newcommand{\figureInset}[2]
+{
+    \figureInsetScaled{#1}{#2}{1}
+}
+
+{BIGBUFFER}
+
+\begin{document}
+
+% Title
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+{BUFFER}
+
+{BODY}
+
+\end{document}

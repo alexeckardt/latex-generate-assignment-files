@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Lab Report",
+        "directory": "lab",
+        "display_name": "Lab"
+    },
+    
+    {
+        "name": "Assignment (Questions)",
+        "directory": "a",
+        "display_name": "Assignment"
+    },
+    
+    {
+        "name": "Assignment (Parts)",
+        "directory": "a",
+        "display_name": "Assignment"
+    },
+
+    {
+        "name": "Tutorial",
+        "directory": "t",
+        "display_name": "tut"
+    }
+]
