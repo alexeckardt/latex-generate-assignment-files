@@ -34,7 +34,7 @@ def input_options(prompt, choices, allowCustom = False):
     for i in range(len(choices)):
 
         #Skip
-        if i is None:
+        if choices[i] == "":
             continue;
 
         choicestr += str(i) + ": " + str(choices[i]) + ", "
@@ -63,7 +63,7 @@ def input_options(prompt, choices, allowCustom = False):
 def input_duedate():
 
     #Months
-    months = [None, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     month = input_options("Month", months)
 
     #Convert to Proper
@@ -108,7 +108,7 @@ def input_authors():
     #Generate Author String
     authStr = PrimaryAuthorName
     for auth in auths:
-        authStr += ", " + auth
+        authStr += "\\and " + auth
 
     #Return
     return authStr
