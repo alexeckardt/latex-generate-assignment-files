@@ -171,8 +171,8 @@ def main():
         print("\nCopied to Clipboard!!\n\n")
         return 0;
 
-    # Place the latex file in 
-    with open(newDir + "/main.tex", 'w') as f:
+    # Place the latex file in named same as above
+    with open(newDir + f"{subdir}/.tex", 'w') as f:
         f.writelines(copyString);
 
     #
