@@ -44,7 +44,7 @@ def create_body_assignment():
 
     #Generate the Lines
     for i in range(qnum):
-        bodystr += "\section{Question XXXX}\n\subsection{a)}\n\n".replace("XXXX", str(i+1)) + BufferString + "\n"
+        bodystr += "\section{Question XXXX}\n\subsection{(a)}\n\n".replace("XXXX", str(i+1)) + BufferString + "\n"
 
     return bodystr;
 
@@ -68,7 +68,7 @@ def create_body_assignment_2():
 
         bodystr += "{BIGBUFFER}\n\n"
         bodystr += "\section{Part " + part + "}\n" 
-        bodystr += "subsection{a)}\n\n"
+        bodystr += "\subsection{(a)}\n\n"
         bodystr += BufferString + "\n"
 
     return bodystr;
@@ -172,7 +172,7 @@ def main():
         return 0;
 
     # Place the latex file in named same as above
-    with open(newDir + f"{subdir}/.tex", 'w') as f:
+    with open(newDir + f"/{subdir}.tex", 'w') as f:
         f.writelines(copyString);
 
     #

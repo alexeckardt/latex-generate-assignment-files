@@ -21,5 +21,11 @@
         "name": "Tutorial",
         "directory": "t",
         "display_name": "tut"
+    },
+
+    {
+        "name": "Blank Notes",
+        "directory": "notes",
+        "display_name": "Notes"
     }
 ]

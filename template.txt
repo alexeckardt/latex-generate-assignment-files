@@ -9,6 +9,7 @@
 \usepackage{color}
 \usepackage{hyperref}
 \usepackage{amssymb}
+\usepackage[margin=2in]{geometry}
 
 {BIGBUFFER}
 
@@ -32,28 +33,6 @@
 \title{COMPSCI {COURSECODE} {ASSIGNMENTTYPE} {ASSIGNMENTNUM}}
 \author{{AUTHORS}}
 \date{{DUEDATE}}
-
-{BIGBUFFER}
-
-%Image
-\newcommand{\figureInsetScaled}[3]
-{
-    \FloatBarrier{}
-    \begin{figure}[ht!]
-        \centering
-        \includegraphics[width=#3\textwidth]{#1}
-        \caption{#2}
-    \end{figure}
-    \FloatBarrier{}
-}
-
-{BUFFER}
-
-%Image, Default Scaling
-\newcommand{\figureInset}[2]
-{
-    \figureInsetScaled{#1}{#2}{1}
-}
 
 {BIGBUFFER}
 

@@ -103,7 +103,7 @@ def input_authors():
 
     #Exit Early
     if len(auths) == 0:
-        return PrimaryAuthorName + " : " + AuthorIdentifier
+        return PrimaryAuthorName + "\n" + AuthorIdentifier
 
     #Generate Author String
     authStr = PrimaryAuthorName
